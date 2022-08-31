@@ -13,6 +13,7 @@ local servers = {
   "jsonls",
   "julials",
   "kotlin_language_server",
+  "marksman",
   "pyright",
   "rust_analyzer",
   "sumneko_lua",
