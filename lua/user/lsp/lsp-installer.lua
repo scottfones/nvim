@@ -97,6 +97,11 @@ for _, server in pairs(servers) do
     goto continue
   end
 
+  if server == "ccls" then
+    local ccls_opts = require "user.lsp.settings.ccls"
+    opts = vim.tbl_deep_extend("force", ccls_opts, opts)
+  end
+
   lspconfig[server].setup(opts)
   ::continue::
 end
