@@ -12,16 +12,19 @@ local diagnostics = null_ls.builtins.diagnostics
 null_ls.setup {
   debug = false,
   sources = {
+    diagnostics.flake8,
+    diagnostics.mypy,
+    diagnostics.pydocstyle,
+    diagnostics.pylint,
     formatting.prettier.with {
       extra_filetypes = { "toml" },
       extra_args = { "--no-semi", "--single-quote", "--jsx-single-quote" },
     },
     formatting.black,
-    formatting.isort,
-    formatting.stylua,
+    formatting.gofmt,
     formatting.google_java_format,
-    diagnostics.flake8,
-    diagnostics.mypy,
-    diagnostics.pylint,
+    formatting.isort,
+    formatting.rustfmt,
+    formatting.stylua,
   },
 }
