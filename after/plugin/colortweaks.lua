@@ -1,4 +1,4 @@
-local enable_transparency = false
+local enable_transparency = true
 
 local hl = function(thing, opts)
 	vim.api.nvim_set_hl(0, thing, opts)
@@ -53,10 +53,6 @@ function TokyoColorTweaks()
 end
 
 function TransparencyColorTweaks()
-	--	hl("BufferLineBackground", {
-	--	fg = "#7a7c9e",
-	--})
-
 	hl("BufferLineFill", {
 		bg = "None",
 	})
