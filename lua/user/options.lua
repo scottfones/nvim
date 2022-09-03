@@ -36,7 +36,7 @@ vim.opt.sidescrolloff = 8
 -- vim.opt.guifont = "monospace:h17"               -- the font used in graphical neovim applications
 vim.opt.fillchars.eob=" "
 vim.opt.shortmess:append "c"
-vim.opt.whichwrap:append("<,>,[,],h,l")
+vim.opt.whichwrap:append("<,>,[,]")
 vim.opt.iskeyword:append("-")
 
 vim.opt.relativenumber = true
