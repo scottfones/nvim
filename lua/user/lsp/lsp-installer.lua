@@ -16,6 +16,7 @@ local servers = {
   "marksman",
   "pyright",
   "rust_analyzer",
+  "sqls",
   "sumneko_lua",
   "taplo",
   "tsserver",
