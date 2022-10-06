@@ -85,6 +85,7 @@ keymap("n", "T", "<cmd>lua require'hop'.hint_char1({ direction = require'hop.hin
 
 -- NvimTree
 keymap("n", "<leader>e", ":NvimTreeToggle<CR>", opts)
+keymap("n", "<leader>ntr", ":NvimTreeRefresh<CR>", opts)
 
 -- Rust Analyzer
 
