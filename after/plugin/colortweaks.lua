@@ -1,4 +1,4 @@
-local enable_transparency = true
+local enable_transparency = false
 
 local hl = function(thing, opts)
 	vim.api.nvim_set_hl(0, thing, opts)
