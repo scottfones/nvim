@@ -84,7 +84,7 @@ return packer.startup(function(use)
   -- Interface
   use({ "j-hui/fidget.nvim",
     config = function()
-      require("crates").setup()
+      require("fidget").setup()
     end, })
 
   -- snippets
@@ -94,7 +94,7 @@ return packer.startup(function(use)
   -- LSP
   use({ "neovim/nvim-lspconfig", }) -- enable LSP
   use({  "williamboman/mason.nvim" })
-  use({  "williamboman/mason-lspconfig.nvim" }) 
+  use({  "williamboman/mason-lspconfig.nvim" })
   use({ "jose-elias-alvarez/null-ls.nvim", }) -- for formatters and linters
   use({ "RRethy/vim-illuminate", })
   use({ "simrat39/rust-tools.nvim", })
