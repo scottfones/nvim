@@ -40,3 +40,7 @@ vim.opt.whichwrap:append("<,>,[,]")
 vim.opt.iskeyword:append("-")
 
 vim.opt.relativenumber = true
+
+-- Spell 
+vim.opt.spelllang = 'en_us'
+vim.opt.spell = true
