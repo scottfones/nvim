@@ -13,11 +13,11 @@ local servers = {
   "jsonls",
   "julials",
   "kotlin_language_server",
+  "lua_ls",
   "marksman",
   "pyright",
   "rust_analyzer",
   "sqls",
-  "sumneko_lua",
   "taplo",
   "tsserver",
   "yamlls",
@@ -39,8 +39,8 @@ for _, server in pairs(servers) do
   }
 
   if server == "sumneko_lua" then
-    local sumneko_opts = require "user.lsp.settings.sumneko_lua"
-    opts = vim.tbl_deep_extend("force", sumneko_opts, opts)
+    local luals_opts = require "user.lsp.settings.lua_ls"
+    opts = vim.tbl_deep_extend("force", luals_opts, opts)
   end
 
   if server == "pyright" then
