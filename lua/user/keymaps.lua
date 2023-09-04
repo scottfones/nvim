@@ -91,6 +91,7 @@ keymap("n", "<leader>e", ":NvimTreeToggle<CR>", opts)
 keymap("n", "<leader>ntr", ":NvimTreeRefresh<CR>", opts)
 
 -- Rust Analyzer
+--[[ see lsp/mason.lua ]]
 
 
 -- Telescope

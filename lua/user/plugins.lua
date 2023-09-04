@@ -72,6 +72,19 @@ return packer.startup(function(use)
 	use({ "hrsh7th/cmp-nvim-lua" })
 	use({ "kdheepak/cmp-latex-symbols" })
 
+	-- duck
+	use({
+		"tamton-aquib/duck.nvim",
+		config = function()
+			vim.keymap.set("n", "<leader>dd", function()
+				require("duck").hatch()
+			end, {})
+			vim.keymap.set("n", "<leader>dk", function()
+				require("duck").cook()
+			end, {})
+		end,
+	})
+
 	-- Hop
 	use({
 		"phaazon/hop.nvim",
