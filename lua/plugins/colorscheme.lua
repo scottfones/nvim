@@ -10,7 +10,8 @@ return {
   -- gruvbox-baby
   {
     "luisiacc/gruvbox-baby",
-    lazy = true,
+    lazy = false,
+    priority = 1000,
     config = function()
       vim.g.gruvbox_baby_background_color = "dark"
       vim.g.gruvbox_baby_telescope_theme = 1
@@ -48,5 +49,4 @@ return {
       colorscheme = "gruvbox-baby",
     },
   },
-  vim.api.nvim_set_hl(0, "LineNr", { fg = "#5eacd3" }),
 }
