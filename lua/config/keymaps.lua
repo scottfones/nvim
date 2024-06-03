@@ -21,3 +21,6 @@ map("n", "<a-l>", "$", { desc = "Go to end of the line", remap = true })
 -- Bufferline
 map("n", "<leader>bmn", "<cmd>BufferLineMoveNext<CR>", { desc = "Move BufferLine tab right", remap = true })
 map("n", "<leader>bmp", "<cmd>BufferLineMovePrev<CR>", { desc = "Move BufferLine tab left", remap = true })
+
+-- Terminal Emulator
+map("t", "<esc><esc><esc>", "<cmd>close<cr>", { desc = "Hide Terminal" })
