@@ -46,7 +46,8 @@ return {
   {
     "LazyVim/LazyVim",
     opts = {
-      colorscheme = "gruvbox-baby",
+      -- colorscheme = "gruvbox-baby",
+      colorscheme = "catppuccin-mocha",
     },
   },
 }
