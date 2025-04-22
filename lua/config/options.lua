@@ -13,3 +13,5 @@ vim.g.lazyvim_rust_diagnostics = "bacon-ls"
 vim.g.lazyvim_python_lsp = "basedpyright"
 -- Set to "ruff_lsp" to use the old LSP implementation version.
 -- vim.g.lazyvim_python_ruff = "ruff"
+
+vim.g.python3_host_prog = "/home/scott/.pyenv/versions/lazyvim/bin/python"
