@@ -1,4 +1,4 @@
--- Set universal clippy settings. Override with project .vscode/settings.json
+-- Override rust-analyzer settings per project via .vscode/settings.json.
 return {
   "mrcjkb/rustaceanvim",
   ft = "rust",
@@ -17,7 +17,6 @@ return {
         ["rust-analyzer"] = {
           check = {
             command = "clippy",
-            extraArgs = { "--all", "--", "-W", "clippy::pedantic", "-W", "clippy::nursery" },
           },
         },
       },
