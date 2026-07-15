@@ -29,7 +29,7 @@ vim.o.guicursor = "n-v-c-sm-ve:block,r-cr-o-i-ci:hor20,a:blinkwait700-blinkoff40
 
 -- PYTHON
 -- python virtual environment (pynvim)
-vim.g.python3_host_prog = vim.fn.expand("~/.config/nvim/venv/bin/python")
+vim.g.python3_host_prog = vim.fn.expand("~/.config/nvim/.venv/bin/python")
 vim.g.lazyvim_python_lsp = "ty"
 vim.g.lazyvim_python_ruff = "ruff"
 
