@@ -95,18 +95,36 @@ return {
     end,
   },
 
+  -- luna
+  {
+    "wtfox/luna.nvim",
+    lazy = false,
+    priority = 1000,
+    opts = {
+      transparent = true,
+      accent = 1.0, -- 0-1, blends syntax accents toward grey_light; 1 = full color
+      plugins = {
+        all = true, -- enable every plugin integration unconditionally
+        auto = true, -- when plugins.all is false, auto-detect via lazy.nvim
+      },
+      -- on_colors = function(colors) end,
+      -- on_highlights = function(highlights, colors) end,
+    },
+  },
+
   -- Set colorscheme
   {
     "LazyVim/LazyVim",
     opts = {
+      -- colorscheme = "catppuccin",
+      -- colorscheme = "edge",
+      -- colorscheme = "github_dark_dimmed",
       -- colorscheme = "gruvbox-baby",
       -- colorscheme = "gruvbox-material",
-      -- colorscheme = "edge",
-      -- colorscheme = "catppuccin",
-      -- colorscheme = "tokyonight",
       -- colorscheme = "kanagawa-dragon",
       colorscheme = "kanagawa-wave",
-      -- colorscheme = "github_dark_dimmed",
+      -- colorscheme = "luna",
+      -- colorscheme = "tokyonight",
     },
   },
 }
