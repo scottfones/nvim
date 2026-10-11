@@ -2,7 +2,7 @@
 name = "nvim-python-provider"
 version = "0.1.0"
 description = "Python provider environment for Neovim (pynvim)."
-requires-python = ">=3.14"
+requires-python = ">=3.15"
 dependencies = ["pynvim"]
 
 [tool.uv]
