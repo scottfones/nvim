@@ -13,6 +13,5 @@ vim.api.nvim_create_autocmd("FileType", {
   pattern = { "rust", "lua", "python", "go", "typescript", "tsx", "javascript", "css" },
   callback = function()
     vim.opt_local.spell = true
-    vim.opt_local.spelllang = { "en_us" }
   end,
 })

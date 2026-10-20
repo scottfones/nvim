@@ -34,4 +34,5 @@ vim.g.lazyvim_python_lsp = "ty"
 vim.g.lazyvim_python_ruff = "ruff"
 
 -- SPELL
+vim.opt.spelllang = { "en_us" }
 vim.opt.spelloptions = "camel"
