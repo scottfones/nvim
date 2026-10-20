@@ -2,6 +2,7 @@ return {
   -- gruvbox
   {
     "ellisonleao/gruvbox.nvim",
+    lazy = true,
     opts = {
       transparent_mode = true,
     },
@@ -10,7 +11,7 @@ return {
   -- gruvbox-baby
   {
     "luisiacc/gruvbox-baby",
-    lazy = false,
+    lazy = true,
     priority = 1000,
     config = function()
       vim.g.gruvbox_baby_background_color = "dark"
@@ -22,7 +23,7 @@ return {
   -- gruvbox-material
   {
     "sainnhe/gruvbox-material",
-    lazy = false,
+    lazy = true,
     priority = 1000,
     config = function()
       vim.g.gruvbox_material_background = "hard"
@@ -71,7 +72,7 @@ return {
   {
     "projekt0n/github-nvim-theme",
     name = "github-theme",
-    lazy = false,
+    lazy = true,
     priority = 1000,
     config = function()
       require("github-theme").setup({
@@ -85,7 +86,7 @@ return {
   -- edge
   {
     "sainnhe/edge",
-    lazy = false,
+    lazy = true,
     priority = 1000,
     config = function()
       vim.g.edge_style = "aura"
@@ -98,7 +99,7 @@ return {
   -- luna
   {
     "wtfox/luna.nvim",
-    lazy = false,
+    lazy = true,
     priority = 1000,
     opts = {
       transparent = true,
