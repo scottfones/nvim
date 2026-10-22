@@ -2,7 +2,11 @@
 -- Default options that are always set: https://github.com/LazyVim/LazyVim/blob/main/lua/lazyvim/config/options.lua
 -- Add any additional options here
 
-vim.o.shell = "/usr/bin/fish"
+-- fish may come from system (/usr/bin) or user (~/.cargo/bin)
+local fish = vim.fn.exepath("fish")
+if fish ~= "" then
+  vim.o.shell = fish
+end
 
 -- BIOME / PRETTIER
 vim.g.lazyvim_prettier_needs_config = true
